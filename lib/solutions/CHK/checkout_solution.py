@@ -11,15 +11,15 @@ skus = "ABBACDDA"
 
 # the occurances of each item category in the skus list
 
-def count_occurances(shopping_list) {
+def count_occurances(shopping_list):
 
-    
-}
+    # get the 
 
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
     
+
 
 
 
