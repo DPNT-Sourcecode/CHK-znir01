@@ -14,6 +14,8 @@ skus = "ABBACDDA"
 def count_occurances(shopping_list):
 
     # create a list of zeroes to represent 
+    counts = [ 0 for _ in data.keys() ]
+
     # get the unique items from the shopping list by using a Set
     uniques = Set(shopping_list)
 
@@ -22,5 +24,6 @@ def count_occurances(shopping_list):
 # skus = unicode string
 def checkout(skus):
     
+
 
 
