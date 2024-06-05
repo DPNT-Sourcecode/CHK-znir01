@@ -13,17 +13,10 @@ skus = "ABBACDDA"
 
 def count_occurances(shopping_list):
 
-    # get the 
+    # get the unique items from the shopping list by using a 
+
 
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
     
-
-
-
-
-
-
-
-
