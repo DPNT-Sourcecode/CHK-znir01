@@ -17,7 +17,7 @@ def count_occurances(shopping_list):
     counts = [ 0 for _ in data.keys() ]
 
     # get the unique items from the shopping list by using a Set
-    uniques = Set(shopping_list)
+    uniques = set(shopping_list)
 
     return counts, uniques
 
@@ -26,6 +26,7 @@ def count_occurances(shopping_list):
 def checkout(skus):
     print(count_occurances(skus))
     
+checkout(skus)
 
 
 
