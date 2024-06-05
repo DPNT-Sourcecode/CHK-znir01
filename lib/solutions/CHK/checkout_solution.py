@@ -6,12 +6,16 @@ data = {
     "D": [15, ""]
 }
 
+skus = "ABBACDDA"
 
+
+# the occurances of each item category in the skus list
 
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
     
+
 
 
 
