@@ -22,7 +22,8 @@ def count_occurances(shopping_list):
     # Cycle through all the items and count the occurances of each one 
     for item in uniques:
 
-        # first, get the 
+        # first, get the index of the item from the original order
+        
 
 
 # noinspection PyUnusedLocal
@@ -31,9 +32,3 @@ def checkout(skus):
     
     
 checkout(skus)
-
-
-
-
-
-
