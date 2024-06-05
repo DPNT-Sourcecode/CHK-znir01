@@ -24,7 +24,6 @@ def count_occurances(shopping_list):
 
         # first, get the index of the item from the original order
         index = list(data.keys()).index(item)
-        print(index)
 
 # noinspection PyUnusedLocal
 # skus = unicode string
@@ -33,3 +32,4 @@ def checkout(skus):
     
     
 checkout(skus)
+
