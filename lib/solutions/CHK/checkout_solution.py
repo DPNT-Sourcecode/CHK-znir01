@@ -19,11 +19,14 @@ def count_occurances(shopping_list):
     # get the unique items from the shopping list by using a Set
     uniques = Set(shopping_list)
 
+    return counts, uniques
 
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
+    print(count_occurances(skus))
     
+
 
 
 
