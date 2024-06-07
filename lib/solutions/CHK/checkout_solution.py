@@ -162,6 +162,7 @@ def checkout(skus):
     
     discount_data = pre_process_discounts(data)
 
+
     for key in data.keys():
         
         item_count = counts[key]
@@ -182,7 +183,7 @@ def checkout(skus):
 
 
 
-print("The total bill is", checkout("EE"))
+
 
 
 
