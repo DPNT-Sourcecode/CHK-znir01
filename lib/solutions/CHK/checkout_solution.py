@@ -173,6 +173,7 @@ def checkout(skus):
         price_item = item_data[0]
 
         item_total_undiscounted = price_item * item_count
+
         price_totals_undiscounted.append(item_total_undiscounted)
 
         if discount_data[key]:
@@ -184,7 +185,8 @@ def checkout(skus):
 
 
 
-print("The total bill is", checkout("AAEE"))
+print("The total bill is", checkout("AABBDDEE"))
+
 
 
 
