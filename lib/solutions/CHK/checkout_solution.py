@@ -115,7 +115,15 @@ def parse_special_offer(item, offer_index, item_data):
         "discount value": discount_value }
 
 
-def calculate_item_discount(discount)
+def calculate_item_discount(item_count, discounts):
+
+    discount_value_total = 0
+
+    for discount in discounts:
+
+
+
+
 
 
 def checkout(skus):
@@ -164,6 +172,7 @@ def checkout(skus):
 
 
 print(checkout("AAABBC"))
+
 
 
 
