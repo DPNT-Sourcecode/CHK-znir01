@@ -11,6 +11,8 @@ data = {
 
 def pre_process_discounts(item_data):
 
+    item_special_offers = {}
+
     for item in item_data:
 
         special_offer_string = item_data[item][1]
@@ -117,14 +119,5 @@ def checkout(skus):
 
 
 print(pre_process_discounts(data))
-
-
-
-
-
-
-
-
-
 
 
