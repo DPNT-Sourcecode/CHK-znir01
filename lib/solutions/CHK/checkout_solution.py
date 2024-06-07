@@ -174,7 +174,7 @@ def checkout(skus):
 
         
         discounts = discount_data[key]
-        print(calculate_item_discount(counts, discounts))
+        # print(calculate_item_discount(counts, discounts))
 
         
 
@@ -183,6 +183,7 @@ def checkout(skus):
 
 
 print("The total bill is", checkout("EE"))
+
 
 
 
