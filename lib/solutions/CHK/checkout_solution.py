@@ -137,10 +137,6 @@ def checkout(skus):
     price_totals_undiscounted = []
     price_totals_discounted = []
 
-    # make sure the shopping list is capitalised
-    # skus = skus.upper()
-
-    # get the unique items from the shopping list by using a Set
     uniques = set(skus)
 
     # validate that the items in the shopping list are actually in the available items
@@ -149,10 +145,8 @@ def checkout(skus):
             print(f"Item {item} is not in our database.")
             return -1
 
-    counts = count_occurances(skus, uniques)
+    counts = count_occurances(skus, data.keys())
     
-    print(counts)
-
     discount_data = pre_process_discounts(data)
 
     for key in data.keys():
@@ -173,7 +167,8 @@ def checkout(skus):
 
 
 
-print(checkout("AABB")
+checkout("AABB")
+
 
 
 
