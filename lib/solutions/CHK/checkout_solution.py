@@ -73,7 +73,7 @@ def parse_special_offer(special_offer):
     # the inclusive price of the special offer
     price = int(special_offer_words[-1])
 
-    return quantity, price
+    # return quantity, price
         
 
 def checkout(skus):
@@ -134,6 +134,7 @@ def checkout(skus):
 
 
 print(pre_process_discounts(data))
+
 
 
 
