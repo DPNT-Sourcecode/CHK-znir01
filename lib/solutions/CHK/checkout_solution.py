@@ -126,8 +126,8 @@ def checkout(skus):
         return -1
 
     # a cumulative total of the price
-    price_totals = []
-
+    price_totals_undiscounted = []
+    price_totals_discounted = []
 
     # make sure the shopping list is capitalised
     # skus = skus.upper()
@@ -151,8 +151,14 @@ def checkout(skus):
         price_item = item_data[0]
 
         item_total_undiscounted = price_item * item_count
+        price_totals_undiscounted.append(item_total_undiscounted)
 
-        
+    
+    return sum(price_totals_undiscounted)
+
+
+print(checkout("AAABBC"))
+
 
 
 
