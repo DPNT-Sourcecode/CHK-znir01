@@ -22,8 +22,11 @@ def convert_number_string_to_int(number_string):
         return int(number_string)
     
     for i, word in enumerate(UNITS):
-        if word == number_string:
+        if word == number_string.lower():
             return i
+    
+    # If it can't figure out what it is, just return 1
+    return 1
 
 
 def pre_process_discounts(item_data):
@@ -94,6 +97,8 @@ def parse_special_offer(special_offer):
 
     if "free" in special_offer_words:
         discount_target = special_offer_words[-2]
+
+        discount_quantity = 
         
 
 
@@ -177,7 +182,8 @@ def checkout(skus):
 
 
 # pre_process_discounts(data)
-print(convert_number_string_to_int("Two"))
+print(convert_number_string_to_int("THREE"))
+
 
 
 
