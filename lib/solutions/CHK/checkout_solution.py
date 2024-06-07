@@ -112,7 +112,7 @@ def parse_special_offer(item, offer_index, item_data):
         "discount value": discount_value }
 
 
-def calculate_item_discount(counts, discounts):
+def calculate_item_discount(item_counts, discounts):
 
     discount_value_total = 0
 
@@ -121,7 +121,7 @@ def calculate_item_discount(counts, discounts):
         discount_target = discount["discount target"]
         discount_value = discount["discount value"]
 
-        buy_target_count = counts[discount["buy target"]]
+        buy_target_count = item_counts[discount["buy target"]]
         buy_target_quantity = discount["buy quantity"]
 
 
@@ -131,7 +131,7 @@ def calculate_item_discount(counts, discounts):
 
         number_of_discounted_items = number_of_discounts * buy_target_quantity
 
-        counts[discount["buy target"]] -= number_of_discounted_items
+        # item_counts[discount["buy target"]] -= number_of_discounted_items
 
         
 
@@ -178,7 +178,7 @@ def checkout(skus):
 
         if discount_data[key]:
             discounts = discount_data[key]
-            # calculate_item_discount(counts, discounts)
+            calculate_item_discount(counts, discounts)
 
         print(key, item_count, price_item)
 
@@ -187,6 +187,7 @@ def checkout(skus):
 
 
 print("The total bill is", checkout("AABBDDEE"))
+
 
 
 
