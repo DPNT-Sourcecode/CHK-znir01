@@ -135,7 +135,7 @@ def calculate_item_discount(item_counts, discounts):
 
 
     return discount_value_total
-    
+
 
 def checkout(skus):
 
@@ -147,8 +147,8 @@ def checkout(skus):
         return -1
 
     # a cumulative total of the price
-    price_totals_undiscounted = []
-    price_totals_discounted = []
+    price_totals_undiscounted = {}
+    price_totals_discounts = {}
 
     uniques = set(skus)
 
@@ -183,6 +183,7 @@ def checkout(skus):
 
 
 print("The total bill is", checkout("AABBDDEE"))
+
 
 
 
