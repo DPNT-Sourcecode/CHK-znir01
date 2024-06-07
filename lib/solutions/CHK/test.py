@@ -1,4 +1,5 @@
 
-x = "BB"
+x = "12"
 
-print(x.isupper())
+print(x.isnumeric())
+

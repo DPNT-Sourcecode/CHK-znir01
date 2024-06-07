@@ -9,6 +9,15 @@ data = {
     "E": [40, "2E get one B free"]
 }
 
+UNITS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
+        "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+        "sixteen", "seventeen", "eighteen", "nineteen",
+        ]
+
+
+def convert_number_string_to_int(number_string):
+    
+
 def pre_process_discounts(item_data):
 
     item_special_offers = {}
@@ -78,7 +87,7 @@ def parse_special_offer(special_offer):
     if "free" in special_offer_words:
         discount_target = special_offer_words[-2]
         
-        
+
 
 
     else:
@@ -160,6 +169,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
