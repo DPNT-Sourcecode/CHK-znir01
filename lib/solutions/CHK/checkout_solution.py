@@ -126,8 +126,9 @@ def calculate_item_discount(item_counts, discounts):
         buy_target_count = item_counts[discount["buy target"]]
         buy_target_quantity = discount["buy quantity"]
 
-
         number_of_discounts = (buy_target_count - number_of_discounted_items) // buy_target_quantity
+
+        print(discount["buy target"], number_of_discounts, discount_value_total)
 
         discount_value_total += number_of_discounts * discount_value
 
@@ -173,15 +174,15 @@ def checkout(skus):
 
         price_totals_undiscounted[key] = item_total_undiscounted
 
-        
         discounts = discount_data[key]
-        # print(calculate_item_discount(counts, discounts))
+        calculate_item_discount(counts, discounts)
 
         
 
     # return sum(price_totals_undiscounted)
 
 
+checkout("EE")
 
 
 
