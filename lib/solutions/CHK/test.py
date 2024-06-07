@@ -3,5 +3,3 @@ dict = {"A": [],
 
 if "A" in list(dict.keys()):
     print("yes")
-
-

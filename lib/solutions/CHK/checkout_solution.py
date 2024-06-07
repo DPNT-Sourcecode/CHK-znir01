@@ -49,6 +49,7 @@ def pre_process_discounts(item_data):
 
                 discount_data[parsed_special_offer["discount target"]].append(parsed_special_offer)
 
+                discount_data[parsed_special_offer["discount target"]] = sorted(discount_data[parsed_special_offer["discount target"]], key=lambda d: d['discount value'])
     
     return discount_data
 
@@ -178,13 +179,6 @@ for item in special_offers:
         print(offer)
     
     print("\n--")
-
-
-
-
-
-
-
 
 
 
