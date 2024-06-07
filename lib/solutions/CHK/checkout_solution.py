@@ -22,9 +22,9 @@ def pre_process_discounts(item_data):
         for offer in special_offers:
 
             if offer: 
-                print(offer)
-                # parsed_special_offer = parse_special_offer(offer)
-                # print(parse_special_offer)
+
+                parsed_special_offer = parse_special_offer(offer.strip())
+                print(parsed_special_offer)
                 # pass
 
 
@@ -134,6 +134,7 @@ def checkout(skus):
 
 
 print(pre_process_discounts(data))
+
 
 
 
