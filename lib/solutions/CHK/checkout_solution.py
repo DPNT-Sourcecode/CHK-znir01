@@ -142,6 +142,8 @@ def checkout(skus):
 
     counts = count_occurances(skus, uniques)
     
+    discount_data = pre_process_discounts(data)
+
     for key, item_count in zip(data.keys(), counts):
         
         item_data = data[key]
@@ -180,6 +182,7 @@ for item in special_offers:
         print(offer)
     
     print("\n--")
+
 
 
 
