@@ -193,12 +193,3 @@ print("The total bill is", checkout("AAAAAEE"))
 
 
 
-
-
-
-
-
-
-
-
-
