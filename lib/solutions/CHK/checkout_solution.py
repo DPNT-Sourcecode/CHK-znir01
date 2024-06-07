@@ -6,7 +6,7 @@ data = {
     "B": [30, "2B for 45"],
     "C": [20, ""],
     "D": [15, ""],
-    "E": []
+    "E": [40, "2E get one B free"]
 }
 
 skus = ""
@@ -109,5 +109,6 @@ def checkout(skus):
 
 
 print(checkout(skus))
+
 
 
