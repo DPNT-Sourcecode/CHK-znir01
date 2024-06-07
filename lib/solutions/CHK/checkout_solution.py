@@ -79,7 +79,11 @@ def parse_special_offer(special_offer):
         special_offer_target = special_offer_words[-2]
     
     else:
-        
+        special_offer_target = buy_target_item
+
+    
+    
+
 
 
     # the inclusive price of the special offer
@@ -146,6 +150,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
