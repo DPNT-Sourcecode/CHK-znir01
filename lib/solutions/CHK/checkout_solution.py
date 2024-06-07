@@ -106,10 +106,10 @@ def parse_special_offer(item, offer_index, item_data):
         discount_quantity = buy_target_quantity
         
 
-    discount_target_individual_value = item_data[discount_target]   
+    discount_target_individual_value = item_data[discount_target][0]
     discount_value = discount_quantity * discount_target_individual_value
     
-    # print(discount_value)
+    print(discount_value)
     # discount value
 
     
@@ -186,9 +186,5 @@ def checkout(skus):
 
 pre_process_discounts(data)
 # print(convert_number_string_to_int("THREE"))
-
-
-
-
 
 
