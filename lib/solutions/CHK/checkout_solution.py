@@ -20,8 +20,11 @@ def pre_process_discounts(item_data):
         special_offers = special_offer_string.split(",")
         
         for offer in special_offers:
-            item_special_offers.append(parse_special_offer(offer))
+            parsed_special_offer = parse_special_offer(offer)
 
+
+            if parse_special_offer["discount target"] == item:
+                pass
 
 
 
@@ -122,6 +125,7 @@ def checkout(skus):
 
 
 print(pre_process_discounts(data))
+
 
 
 
