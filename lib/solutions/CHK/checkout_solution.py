@@ -127,7 +127,7 @@ def checkout(skus):
 
     # a cumulative total of the price
     price_totals = []
-    
+
 
     # make sure the shopping list is capitalised
     # skus = skus.upper()
@@ -148,9 +148,12 @@ def checkout(skus):
     for key, item_count in zip(data.keys(), counts):
         
         item_data = data[key]
-        price = item_data[0]
+        price_item = item_data[0]
+
+        item_total_undiscounted = price_item * item_count
 
         
+
 
 
 
