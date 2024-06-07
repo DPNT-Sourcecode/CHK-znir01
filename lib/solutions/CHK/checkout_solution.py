@@ -153,7 +153,7 @@ def checkout(skus):
     
     discount_data = pre_process_discounts(data)
 
-    for key, item_count in zip(data.keys(), counts):
+    for keydata.keys(), counts):
         
         item_data = data[key]
         price_item = item_data[0]
@@ -169,7 +169,8 @@ def checkout(skus):
     return sum(price_totals_undiscounted)
 
 
-print(checkout("AAABBC"))
+
+
 
 
 
