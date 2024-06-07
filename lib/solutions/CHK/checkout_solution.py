@@ -44,7 +44,7 @@ def pre_process_discounts(item_data):
             if offer: 
 
                 parsed_special_offer = parse_special_offer(item, offer_index, item_data)
-                # print(parsed_special_offer)
+                print(parsed_special_offer)
                 # pass
 
 
@@ -116,20 +116,7 @@ def parse_special_offer(item, offer_index, item_data):
         "discount target": discount_target,
         "discount value": discount_value }
 
-    
 
-
-
-    
-    
-
-
-
-    # the inclusive price of the special offer
-    # price = int(special_offer_words[-1])
-
-    # return quantity, price
-        
 
 def checkout(skus):
 
@@ -190,5 +177,6 @@ def checkout(skus):
 
 pre_process_discounts(data)
 # print(convert_number_string_to_int("THREE"))
+
 
 
