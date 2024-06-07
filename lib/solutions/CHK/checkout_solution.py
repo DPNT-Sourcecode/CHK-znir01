@@ -182,7 +182,8 @@ def checkout(skus):
 
 
 
-print("The total bill is", checkout("AAADDEE"))
+print("The total bill is", checkout("EE"))
+
 
 
 
