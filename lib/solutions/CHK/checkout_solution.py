@@ -117,7 +117,7 @@ def calculate_item_discount(counts, discounts):
     discount_value_total = 0
 
     for discount in discounts:
-        pass
+        
 
 
 
@@ -160,14 +160,15 @@ def checkout(skus):
 
         if discount_data[key]:
             discounts = discount_data[key]
-            print(discounts)
+            # print(discounts)
 
     
     return sum(price_totals_undiscounted)
 
 
 
-checkout("AABB")
+print(checkout("AABB"))
+
 
 
 
