@@ -9,7 +9,9 @@ data = {
     "E": [40, "2E get one B free"]
 }
 
-skus = ""
+def pre_process_discounts(item_data):
+
+    
 
 
 # the occurances of each item category in the skus list
@@ -109,6 +111,7 @@ def checkout(skus):
 
 
 print(checkout(skus))
+
 
 
 
