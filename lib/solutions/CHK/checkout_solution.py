@@ -60,21 +60,18 @@ def pre_process_discounts(item_data):
 def count_occurances(shopping_list, uniques):
 
     # create a list of zeroes to represent 
-    counts = [ 0 for _ in data.keys() ]
+    counts = {}
 
     # Cycle through all the items and count the occurances of each one 
     for item in uniques:
-
-        # first, get the index of the item from the original order
-        index = list(data.keys()).index(item)
 
         # count the occurances 
         count = shopping_list.count(item)
 
         # store the count 
-        counts[index] = count
+        counts[item] = count
 
-    
+
     return counts
 
 
@@ -173,6 +170,7 @@ def checkout(skus):
 
 
 print(checkout("AAABBC"))
+
 
 
 

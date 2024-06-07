@@ -1,5 +1,6 @@
-dict = {"A": [],
-        "B": []}
+
+print("AABB".count("C"))
+
 
 # if "A" in list(dict.keys()):
 #     print("yes")
