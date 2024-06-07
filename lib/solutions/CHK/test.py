@@ -1,6 +1,7 @@
 dict = {"A": [],
         "B": []}
 
-if dict["C"]:
+if "A" in list(dict.keys()):
     print("yes")
+
 

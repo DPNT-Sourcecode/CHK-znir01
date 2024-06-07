@@ -31,7 +31,11 @@ def convert_number_string_to_int(number_string):
 
 def pre_process_discounts(item_data):
 
+    discount_data = {}
+
     for item in item_data:
+
+        
 
         special_offer_string = item_data[item][1]
         special_offers = special_offer_string.split(",")
@@ -174,6 +178,7 @@ def checkout(skus):
 
 pre_process_discounts(data)
 # print(convert_number_string_to_int("THREE"))
+
 
 
 
