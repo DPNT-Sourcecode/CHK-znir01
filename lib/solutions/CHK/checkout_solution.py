@@ -11,7 +11,10 @@ data = {
 
 def pre_process_discounts(item_data):
 
-    
+    for item in item_data:
+        print(item)
+
+
 
 
 # the occurances of each item category in the skus list
@@ -110,7 +113,8 @@ def checkout(skus):
 
 
 
-print(checkout(skus))
+print(pre_process_discounts(data))
+
 
 
 
