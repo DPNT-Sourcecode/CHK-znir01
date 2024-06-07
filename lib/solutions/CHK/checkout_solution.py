@@ -31,7 +31,7 @@ def convert_number_string_to_int(number_string):
 
 def pre_process_discounts(item_data):
 
-    item_special_offers = {}
+    item_special_offers_all = {}
 
     for item in item_data:
 
@@ -97,14 +97,13 @@ def parse_special_offer(special_offer):
 
     if "free" in special_offer_words:
         discount_target = special_offer_words[-2]
-
         discount_quantity = convert_number_string_to_int(special_offer_words[-3])
         
 
     else:
         discount_target = buy_target_item
         discount_quantity = buy_target_quantity
-        
+
     print(discount_quantity)
     # discount value
 
@@ -182,6 +181,7 @@ def checkout(skus):
 
 pre_process_discounts(data)
 # print(convert_number_string_to_int("THREE"))
+
 
 
 
