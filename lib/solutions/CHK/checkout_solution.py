@@ -77,11 +77,16 @@ def parse_special_offer(special_offer):
 
     if "free" in special_offer_words:
         discount_target = special_offer_words[-2]
-    
+        
+        
+
+
     else:
         discount_target = buy_target_item
 
     
+    # discount value
+
     
 
 
@@ -155,6 +160,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
