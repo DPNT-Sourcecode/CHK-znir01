@@ -129,6 +129,10 @@ def calculate_item_discount(counts, discounts):
 
         discount_value_total += number_of_discounts * discount_value
 
+        number_of_discounted_items = number_of_discounts * buy_target_quantity
+
+        print(number_of_discounted_items)
+
         
 
     # print(discount_value_total)
@@ -180,7 +184,8 @@ def checkout(skus):
 
 
 
-print("The total bill is", checkout("AABBEE"))
+print("The total bill is", checkout("AAAAA"))
+
 
 
 
