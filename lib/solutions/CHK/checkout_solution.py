@@ -126,7 +126,8 @@ def checkout(skus):
         return -1
 
     # a cumulative total of the price
-    total_price = 0
+    price_totals = []
+    
 
     # make sure the shopping list is capitalised
     # skus = skus.upper()
@@ -149,10 +150,7 @@ def checkout(skus):
         item_data = data[key]
         price = item_data[0]
 
-
-    return total_price        
-
-
+        
 
 
 
