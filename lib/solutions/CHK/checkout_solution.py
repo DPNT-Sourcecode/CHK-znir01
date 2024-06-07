@@ -180,7 +180,8 @@ def checkout(skus):
     # return sum(price_totals_undiscounted)
 
 
-checkout("BBBB")
+checkout("BBBEE")
+
 
 
 
