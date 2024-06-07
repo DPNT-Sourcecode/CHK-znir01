@@ -83,30 +83,29 @@ def count_occurances(shopping_list, uniques):
 def parse_special_offer(item, offer_index, item_data):
     
     special_offer = item_data[item][1].split(",")[offer_index].strip()
-    print(special_offer)
   
-    # special_offer_words = special_offer.split(" ") 
+    special_offer_words = special_offer.split(" ") 
 
-    # # the quantity involved in the special offer
-    # # strip out the words and just leave the number from the 
-    # # first word of the special offer string
-    # buy_target_quantity = int(re.findall("\d+", special_offer_words[0])[0])
+    # the quantity involved in the special offer
+    # strip out the words and just leave the number from the 
+    # first word of the special offer string
+    buy_target_quantity = int(re.findall("\d+", special_offer_words[0])[0])
 
-    # buy_target_item = re.findall("[A-Z]", special_offer_words[0])[0]
+    buy_target_item = re.findall("[A-Z]", special_offer_words[0])[0]
 
 
     # # discount target 
 
-    # if "free" in special_offer_words:
-    #     discount_target = special_offer_words[-2]
-    #     discount_quantity = convert_number_string_to_int(special_offer_words[-3])
+    if "free" in special_offer_words:
+        discount_target = special_offer_words[-2]
+        discount_quantity = convert_number_string_to_int(special_offer_words[-3])
         
 
-    # else:
-    #     discount_target = buy_target_item
-    #     discount_quantity = buy_target_quantity
+    else:
+        discount_target = buy_target_item
+        discount_quantity = buy_target_quantity
 
-    # print(discount_quantity)
+    print(discount_quantity)
     # discount value
 
     
@@ -183,6 +182,7 @@ def checkout(skus):
 
 pre_process_discounts(data)
 # print(convert_number_string_to_int("THREE"))
+
 
 
 
