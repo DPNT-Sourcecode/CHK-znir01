@@ -50,13 +50,8 @@ def pre_process_discounts(item_data):
                 # pass
 
 
-            if parse_special_offer["discount target"] == item:
-                discount_data[item].append()
-            #     print(parse_special_offer["discount target"])
-            #     print(item)
 
-            # else: 
-            #     pass
+                discount_data[parsed_special_offer["discount target"]].append(parse_special_offer)
 
 
 
@@ -180,6 +175,7 @@ def checkout(skus):
 
 pre_process_discounts(data)
 # print(convert_number_string_to_int("THREE"))
+
 
 
 
