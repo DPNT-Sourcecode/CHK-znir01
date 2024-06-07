@@ -80,9 +80,9 @@ def count_occurances(shopping_list, uniques):
     return counts
 
 
-def parse_special_offer(item, data):
+def parse_special_offer(item, item_data):
     
-    special_offer = data
+    special_offer = item_data[item][1].strip()
   
     special_offer_words = special_offer.split(" ") 
 
@@ -182,5 +182,6 @@ def checkout(skus):
 
 pre_process_discounts(data)
 # print(convert_number_string_to_int("THREE"))
+
 
 
