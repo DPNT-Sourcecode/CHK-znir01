@@ -1,4 +1,6 @@
+dict = {"A": [],
+        "B": []}
 
-x = "12"
+if dict["C"]:
+    print("yes")
 
-print(x.isnumeric())
