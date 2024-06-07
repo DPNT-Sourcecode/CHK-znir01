@@ -152,8 +152,3 @@ def checkout(skus):
 pre_process_discounts(data)
 
 
-
-
-
-
-
