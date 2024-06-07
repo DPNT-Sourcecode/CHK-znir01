@@ -2,10 +2,11 @@ import re
 
 data = {
 
-    "A": [50, "3A for 130"],
+    "A": [50, "3A for 130, 5A for 200"],
     "B": [30, "2B for 45"],
     "C": [20, ""],
-    "D": [15, ""]
+    "D": [15, ""],
+    "E": []
 }
 
 skus = ""
@@ -108,5 +109,6 @@ def checkout(skus):
 
 
 print(checkout(skus))
+
 
 
