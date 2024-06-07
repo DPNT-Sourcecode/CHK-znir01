@@ -70,7 +70,12 @@ def parse_special_offer(special_offer):
     # first word of the special offer string
     buy_target_quantity = int(re.findall("\d+", special_offer_words[0])[0])
 
-    buy_target_sku = re.findall("[A-Z]", special_offer_words[0])[0]
+    buy_target_item = re.findall("[A-Z]", special_offer_words[0])[0]
+
+
+    # discount target 
+    
+
     # the inclusive price of the special offer
     # price = int(special_offer_words[-1])
 
@@ -135,6 +140,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
