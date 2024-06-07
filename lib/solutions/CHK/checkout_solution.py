@@ -109,7 +109,8 @@ def parse_special_offer(item, offer_index, item_data):
         "buy target": buy_target_item,
         "buy quantity": buy_target_quantity,
         "discount target": discount_target,
-        "discount value": discount_value }
+        "discount value": discount_value,
+        "" }
 
 
 def calculate_item_discount(item_counts, discounts):
@@ -126,7 +127,7 @@ def calculate_item_discount(item_counts, discounts):
         buy_target_count = item_counts[discount["buy target"]]
         buy_target_quantity = discount["buy quantity"]
 
-        number_of_discounts = (buy_target_count ) // buy_target_quantity
+        number_of_discounts = (buy_target_count - number_of_discounted_items) // buy_target_quantity
 
         discount_value_total += number_of_discounts * discount_value
 
@@ -182,6 +183,7 @@ def checkout(skus):
 
 
 checkout("AAAAA")
+
 
 
 
