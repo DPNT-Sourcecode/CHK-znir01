@@ -120,6 +120,7 @@ def calculate_item_discount(counts, discounts):
     discount_value_total = 0
 
     for discount in discounts:
+        pass
 
 
 
@@ -172,6 +173,7 @@ def checkout(skus):
 
 
 print(checkout("AAABBC"))
+
 
 
 
