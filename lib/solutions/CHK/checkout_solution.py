@@ -16,7 +16,12 @@ UNITS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
 
 
 def convert_number_string_to_int(number_string):
+
+    if number_string.isnumeric():
+        return int(number_string)
     
+    for i, word in UNITS:
+        
 
 def pre_process_discounts(item_data):
 
@@ -169,6 +174,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
