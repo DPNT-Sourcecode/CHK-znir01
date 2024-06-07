@@ -151,10 +151,13 @@ def checkout(skus):
 
     counts = count_occurances(skus, uniques)
     
+    print(counts)
+
     discount_data = pre_process_discounts(data)
 
-    for keydata.keys(), counts):
+    for key in data.keys():
         
+        item_count = counts[key]
         item_data = data[key]
         price_item = item_data[0]
 
@@ -170,14 +173,7 @@ def checkout(skus):
 
 
 
-
-
-
-
-
-
-
-
+print(checkout("AABB")
 
 
 
