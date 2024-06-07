@@ -119,9 +119,12 @@ def calculate_item_discount(counts, discounts):
 
     for discount in discounts:
         
+        discount_value = discount["discount value"]
+
         buy_target_count = counts[discount["buy target"]]
         buy_target_quantity = discount["buy quantity"]
 
+        
 
 
 
@@ -171,6 +174,7 @@ def checkout(skus):
 
 
 print(checkout("AABB"))
+
 
 
 
