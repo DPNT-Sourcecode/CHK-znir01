@@ -174,7 +174,11 @@ def checkout(skus):
 special_offers = pre_process_discounts(data)
 
 for item in special_offers:
-    print(special_offers[item])
+    for offer in special_offers[item]:
+        print(offer)
+    
+    print("\n--")
+
 
 
 
