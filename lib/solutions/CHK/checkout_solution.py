@@ -9,6 +9,7 @@ data = {
     "E": [40, "2E get one B free"]
 }
 
+# I am assuming you can't get more than 19 free items in an offer
 UNITS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
         "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
         "sixteen", "seventeen", "eighteen", "nineteen",
@@ -20,8 +21,10 @@ def convert_number_string_to_int(number_string):
     if number_string.isnumeric():
         return int(number_string)
     
-    for i, word in UNITS:
-        
+    for i, word in enumerate(UNITS):
+        if word == number_string:
+            return i
+
 
 def pre_process_discounts(item_data):
 
@@ -173,7 +176,9 @@ def checkout(skus):
 
 
 
-pre_process_discounts(data)
+# pre_process_discounts(data)
+print(convert_number_string_to_int("Two"))
+
 
 
 
