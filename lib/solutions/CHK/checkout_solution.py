@@ -35,7 +35,7 @@ def pre_process_discounts(item_data):
 
     for item in item_data:
 
-        if item not in list(discount_data.key()):
+        if item not in list(discount_data.keys()):
             discount_data[item] = []
 
         special_offer_string = item_data[item][1]
@@ -46,13 +46,11 @@ def pre_process_discounts(item_data):
             if offer: 
 
                 parsed_special_offer = parse_special_offer(item, offer_index, item_data)
-                print(parsed_special_offer)
-                # pass
 
+                discount_data[parsed_special_offer["discount target"]].append(parsed_special_offer)
 
-
-                discount_data[parsed_special_offer["discount target"]].append(parse_special_offer)
-
+    
+    return discount_data
 
 
 # the occurances of each item category in the skus list
@@ -173,8 +171,12 @@ def checkout(skus):
 
 
 
-pre_process_discounts(data)
-# print(convert_number_string_to_int("THREE"))
+special_offers = pre_process_discounts(data)
+
+for item in special_offers:
+    print(special_offers[item])
+
+
 
 
 
