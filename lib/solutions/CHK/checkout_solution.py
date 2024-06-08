@@ -139,6 +139,12 @@ def parse_special_offer(item, offer_index, item_data):
          }
 
 
+
+def parse_bag_special_offer(offer_words):
+
+    
+
+
 def calculate_item_discount(item_counts, discounts):
 
     print(discounts)
@@ -231,6 +237,7 @@ def checkout(skus):
 
 
 # print(checkout("HHHHHHHHHH"))
+
 
 
 
