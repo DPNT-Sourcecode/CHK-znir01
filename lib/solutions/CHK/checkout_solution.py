@@ -184,7 +184,7 @@ def checkout(skus):
 
         item_total_discounted = max(item_total_undiscounted - item_total_discount, 0)
 
-        print(item_total_discounted)
+        price_totals_discounts[key] = item_total_discounted
 
 
         
@@ -192,7 +192,8 @@ def checkout(skus):
     # return sum(price_totals_undiscounted)
 
 
-checkout("AAAAAEEBB")
+checkout("AAAAAEEEEBBB")
+
 
 
 
