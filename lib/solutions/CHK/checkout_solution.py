@@ -178,12 +178,12 @@ def parse_bag_special_offer(offer):
          }
 
 
-def sort_into_bags(counts, individual_target, discount_targets, discount_quantity, discount_values):
+def bag_discount_value(counts, individual_target, discount_targets, discount_quantity, discount_values):
     
     total_discount_items_count = 0
 
     for item in discount_targets:
-        total_discount_items_count += counts[item]
+        total_discount_items_count +=counts[item]
 
 
 
@@ -283,7 +283,8 @@ def checkout(skus):
     return discounted_total
 
 
-checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+shopping = 
+counts = count_occurances("SSTTXYZZZ", )
 
 
 
