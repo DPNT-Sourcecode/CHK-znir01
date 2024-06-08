@@ -178,6 +178,14 @@ def parse_bag_special_offer(offer):
          }
 
 
+def sort_into_bags(counts, individual_target, discount_targets, discount_quantity, discount_values):
+    
+    total_discount_items_count = 0
+
+    for item in discount_targets:
+        total_discount_items_count += counts[item]
+
+
 
 def calculate_item_discount(item_counts, discounts):
 
@@ -187,6 +195,12 @@ def calculate_item_discount(item_counts, discounts):
     number_of_discounted_items = 0
 
     for discount in discounts:
+
+        if discount["discount target"] == "special":
+            
+            discount_items = discount["buy target"]
+
+            return 0 
         
         discount_target = discount["discount target"]
         discount_value = discount["discount value"]
@@ -269,9 +283,11 @@ def checkout(skus):
     return discounted_total
 
 
-print(pre_process_discounts(data))
+checkout("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-# print(data["Z"][0])
+
+
+
 
 
 
