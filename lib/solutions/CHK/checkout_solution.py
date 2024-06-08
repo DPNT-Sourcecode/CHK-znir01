@@ -12,7 +12,7 @@ data = {
     "H": [10, "5H for 45, 10H for 80"],
     "I": [35, ""],
     "J": [60, ""],
-    "K": [80, "2K for 150"],
+    "K": [70, "2K for 120"],
     "L": [90, ""],
     "M": [15, ""],
     "N": [40, "3N get one M free"],
@@ -110,7 +110,7 @@ def parse_special_offer(item, offer_index, item_data):
     buy_target_item = re.findall("[A-Z]", special_offer_words[0])[0]
 
 
-    # # discount target 
+    if 
 
     if "free" in special_offer_words:
         discount_target = special_offer_words[-2]
@@ -228,6 +228,7 @@ def checkout(skus):
 
 
 # print(checkout("HHHHHHHHHH"))
+
 
 
 
