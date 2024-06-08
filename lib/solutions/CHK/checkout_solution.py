@@ -136,6 +136,7 @@ def calculate_item_discount(item_counts, discounts):
 
         number_of_discounted_items = number_of_discounts * discount_quantity
         
+        
 
     return discount_value_total
 
@@ -184,13 +185,7 @@ def checkout(skus):
     # return sum(price_totals_undiscounted)
 
 
-checkout("AAAAAAAAAAAAABBBB")
-
-
-
-
-
-
+checkout("EE")
 
 
 
