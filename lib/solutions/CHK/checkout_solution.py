@@ -289,18 +289,11 @@ shopping = "SSTTXYZZZ"
 counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
-target = set(shopping)
-print(target)
-# print(discounts[target])
+target = list(set(shopping))[2]
+# print(target)
 
-# bag_discount_value(counts, target, )
-
-
-
-
-
-
-
+print(discounts)
+# bag_discount_value(counts, target, disc)
 
 
 
