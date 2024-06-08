@@ -146,7 +146,7 @@ def parse_bag_special_offer(offer):
     offer_words = offer.split(" ")
 
     buy_target_quantity = int(re.findall("\d+", offer_words[2])[0])
-    buy_target_item =  offer_words[4].strip("(").split(",")
+    buy_target_item =  offer_words[4].strip("()").split(",")
 
     # lets say the user purchases buy_target_quantity of an item, how much are they saving individually?
     
@@ -256,9 +256,10 @@ def checkout(skus):
     return discounted_total
 
 
-# pre_process_discounts(data)
+pre_process_discounts(data)
 
-print(data["Z"])
+# print(data["Z"][0])
+
 
 
 
