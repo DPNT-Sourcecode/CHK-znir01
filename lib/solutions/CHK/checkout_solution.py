@@ -198,8 +198,11 @@ def checkout(skus):
     discounted_total = sum(list(price_totals_discounts.values()))
     print("Total after discounts:", discounted_total)
 
+    print("Total savings:", undiscounted_total - discounted_total)
 
-checkout("AAAAAEEEEBBB")
+
+checkout("AAABBBEEEE")
+
 
 
 
