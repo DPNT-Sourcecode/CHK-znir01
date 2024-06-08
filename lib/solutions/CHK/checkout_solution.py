@@ -180,14 +180,15 @@ def checkout(skus):
         price_totals_undiscounted[key] = item_total_undiscounted
 
         discounts = discount_data[key]
-        print(calculate_item_discount(counts, discounts))
+        calculate_item_discount(counts, discounts)
 
         
 
     # return sum(price_totals_undiscounted)
 
 
-checkout("EE")
+checkout("EEEBBBB")
+
 
 
 
