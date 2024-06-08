@@ -292,8 +292,11 @@ discounts = pre_process_discounts(data)
 target = list(set(shopping))[2]
 # print(target)
 
-print(discounts)
+for i in discounts:
+    print(discounts[i])
+    print(" \n ---- \n ")
 # bag_discount_value(counts, target, disc)
+
 
 
 
