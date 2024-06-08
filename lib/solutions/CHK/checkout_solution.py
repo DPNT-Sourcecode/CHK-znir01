@@ -201,12 +201,3 @@ checkout("AAAAAEEEEBBB")
 
 
 
-
-
-
-
-
-
-
-
-
