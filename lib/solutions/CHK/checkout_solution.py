@@ -213,9 +213,3 @@ print(checkout("FF"))
 
 
 
-
-
-
-
-
-
