@@ -156,7 +156,10 @@ def parse_bag_special_offer(offer):
     # the individual price of each item if the bag discount is invoked
     discount_price_individual = discount_price // buy_target_quantity
     
-    individual_discounts {}
+    individual_discounts = {}
+
+    for item in buy_target_item:
+        
     
 
 
@@ -253,6 +256,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
