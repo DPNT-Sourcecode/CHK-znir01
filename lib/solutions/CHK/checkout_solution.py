@@ -65,7 +65,8 @@ def pre_process_discounts(item_data):
         for offer_index, offer in enumerate(special_offers):
 
             if offer: 
-
+                
+                
                 parsed_special_offer = parse_special_offer(item, offer_index, item_data)
                 discount_data[parsed_special_offer["discount target"]].append(parsed_special_offer)
 
@@ -267,6 +268,7 @@ def checkout(skus):
 pre_process_discounts(data)
 
 # print(data["Z"][0])
+
 
 
 
