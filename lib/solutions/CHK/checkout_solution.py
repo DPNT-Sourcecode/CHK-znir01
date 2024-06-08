@@ -287,6 +287,7 @@ shopping = "SSTTXYZZZ"
 counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
+bag_discount_value(counts, "")
 
 
 
