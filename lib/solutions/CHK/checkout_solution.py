@@ -236,4 +236,3 @@ print(checkout("HHHHHHHHHH"))
 
 
 
-
