@@ -201,7 +201,8 @@ def checkout(skus):
     print("Total savings:", undiscounted_total - discounted_total)
 
 
-checkout("AAABBBEEEE")
+checkout("BBBEEEE")
+
 
 
 
