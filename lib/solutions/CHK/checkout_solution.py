@@ -101,7 +101,7 @@ def parse_special_offer(item, offer_index, item_data):
     item_special_offers = item_data[item][1]
 
     if "any" in item_special_offers:
-        parse_bag_special_offer(item_special_offers)
+        return parse_bag_special_offer(item_special_offers)
 
     special_offer = item_special_offers.split(",")[offer_index].strip()
   
@@ -267,6 +267,7 @@ def checkout(skus):
 pre_process_discounts(data)
 
 # print(data["Z"][0])
+
 
 
 
