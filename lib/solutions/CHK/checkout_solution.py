@@ -227,7 +227,8 @@ def checkout(skus):
     return discounted_total
 
 
-print(checkout("FFFFFFFFF"))
+print(checkout("HHHHHHHHHH"))
+
 
 
 
