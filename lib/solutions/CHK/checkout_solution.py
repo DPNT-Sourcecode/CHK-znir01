@@ -7,7 +7,7 @@ data = {
     "C": [20, ""],
     "D": [15, ""],
     "E": [40, "2E get one B free"],
-    "F": [10, "2F get one F free"]
+    "F": [10, "2F get one F free"],
 }
 
 # I am assuming you can't get more than 19 free items in an offer
@@ -208,6 +208,7 @@ def checkout(skus):
 
 
 print(checkout("FFFFFFFFF"))
+
 
 
 
