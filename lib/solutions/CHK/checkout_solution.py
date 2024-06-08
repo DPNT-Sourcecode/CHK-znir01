@@ -102,6 +102,9 @@ def parse_special_offer(item, offer_index, item_data):
   
     special_offer_words = special_offer.split(" ") 
 
+    if "any" in special_offer_words:
+        pass
+
     # the quantity involved in the special offer
     # strip out the words and just leave the number from the 
     # first word of the special offer string
@@ -109,11 +112,7 @@ def parse_special_offer(item, offer_index, item_data):
 
     buy_target_item = re.findall("[A-Z]", special_offer_words[0])[0]
 
-
-    if "any" in special_offer_words:
-        pass
-
-    elif "free" in special_offer_words:
+    if "free" in special_offer_words:
         discount_target = special_offer_words[-2]
         discount_quantity = convert_number_string_to_int(special_offer_words[-3])
         normal_price = 0
@@ -231,6 +230,7 @@ def checkout(skus):
 
 
 print(checkout("HHHHHHHHHH"))
+
 
 
 
