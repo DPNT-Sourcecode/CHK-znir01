@@ -98,7 +98,7 @@ def parse_special_offer(item, offer_index, item_data):
         normal_price = 0
 
         if buy_target_item == discount_target:
-            print(buy_target_item) 
+            buy_target_quantity += 1
 
     else:
         discount_target = buy_target_item
@@ -207,7 +207,8 @@ def checkout(skus):
     return discounted_total
 
 
-print(checkout("FF"))
+print(checkout("FFFFFFFFF"))
+
 
 
 
