@@ -289,7 +289,8 @@ discounts = pre_process_discounts(data)
 
 target = set(shopping)
 
-bag_discount_value(counts, , dis##)
+bag_discount_value(counts, target, discounts[])
+
 
 
 
