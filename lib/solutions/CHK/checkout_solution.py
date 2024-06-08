@@ -67,7 +67,6 @@ def pre_process_discounts(item_data):
             if offer: 
 
                 parsed_special_offer = parse_special_offer(item, offer_index, item_data)
-
                 discount_data[parsed_special_offer["discount target"]].append(parsed_special_offer)
 
                 # sort it in reverse order of discount value
@@ -101,6 +100,7 @@ def parse_special_offer(item, offer_index, item_data):
     item_special_offers = item_data[item][1]
 
     if "any" in item_special_offers:
+        
         return parse_bag_special_offer(item_special_offers)
 
     special_offer = item_special_offers.split(",")[offer_index].strip()
@@ -164,7 +164,7 @@ def parse_bag_special_offer(offer):
         individual_discounts[item] = discount_amount_individual
 
     
-    {
+    return {
         "buy target": buy_target_item,
         "buy quantity": buy_target_quantity,
         "discount target": "special",
@@ -267,6 +267,7 @@ def checkout(skus):
 pre_process_discounts(data)
 
 # print(data["Z"][0])
+
 
 
 
