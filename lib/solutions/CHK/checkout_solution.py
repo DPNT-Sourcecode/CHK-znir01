@@ -97,14 +97,15 @@ def count_occurances(shopping_list, uniques):
 
 
 def parse_special_offer(item, offer_index, item_data):
-    
-    special_offer = item_data[item][1].split(",")[offer_index].strip()
+
+    item_special_offers = item_data[item][1]
+
+    if "any" in item_special_offers:
+        parse_bag_special_offer(item_special_offers)
+
+    special_offer = item_special_offers.split(",")[offer_index].strip()
   
     special_offer_words = special_offer.split(" ") 
-
-    if "any" in special_offer_words:
-        parse_bag_special_offer(special_offer_words)
-        
 
     # the quantity involved in the special offer
     # strip out the words and just leave the number from the 
@@ -241,6 +242,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
