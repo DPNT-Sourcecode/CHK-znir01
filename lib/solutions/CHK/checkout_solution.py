@@ -147,6 +147,8 @@ def parse_bag_special_offer(offer):
 
     buy_target_quantity = int(re.findall("\d+", offer_words[2])[0])
     buy_target_item =  offer_words[4].strip("(").split(",")
+
+    
     
 
 
@@ -243,9 +245,6 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
-
-
-
 
 
 
