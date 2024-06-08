@@ -150,8 +150,12 @@ def parse_bag_special_offer(offer):
 
     # lets say the user purchases buy_target_quantity of an item, how much are they saving individually?
     
+    # The total price if a bag discount is invoked
+    discount_price = offer_words[-1]
+
     # the individual price of each item if the bag discount is invoked
-    discount_price_individual = 
+    discount_price_individual = discount_price / buy_target_quantity
+    print(discount_price_individual)
     
 
 
@@ -248,6 +252,7 @@ def checkout(skus):
 
 
 pre_process_discounts(data)
+
 
 
 
