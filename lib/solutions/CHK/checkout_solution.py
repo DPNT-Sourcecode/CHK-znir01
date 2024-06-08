@@ -199,9 +199,12 @@ def checkout(skus):
     print("Total after discounts:", discounted_total)
 
     print("Total savings:", undiscounted_total - discounted_total)
+    
+    return discounted_total
 
 
-checkout("BBBEEEE")
+print(checkout("A"))
+
 
 
 
