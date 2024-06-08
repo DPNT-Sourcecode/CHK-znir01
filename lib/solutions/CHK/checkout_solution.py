@@ -20,14 +20,14 @@ data = {
     "P": [50, "5P for 200"],
     "Q": [30, "3Q for 80"],
     "R": [50, "3R get one Q free"],
-    "S": [30, ""],
-    "T": [20, ""],
+    "S": [20, "buy any 3 of (S,T,X,Y,Z) for 45"],
+    "T": [20, "buy any 3 of (S,T,X,Y,Z) for 45"],
     "U": [40, "3U get one U free"],
     "V": [50, "2V for 90, 3V for 130"],
     "W": [20, ""],
-    "X": [90, ""],
-    "Y": [10, ""],
-    "Z": [50, ""]
+    "X": [17, "buy any 3 of (S,T,X,Y,Z) for 45"],
+    "Y": [20, "buy any 3 of (S,T,X,Y,Z) for 45"],
+    "Z": [21, "buy any 3 of (S,T,X,Y,Z) for 45"]
 }
 
 # I am assuming you can't get more than 19 free items in an offer
@@ -227,7 +227,8 @@ def checkout(skus):
     return discounted_total
 
 
-print(checkout("HHHHHHHHHH"))
+# print(checkout("HHHHHHHHHH"))
+
 
 
 
