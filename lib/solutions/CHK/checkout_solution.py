@@ -159,7 +159,8 @@ def parse_bag_special_offer(offer):
     individual_discounts = {}
 
     for item in buy_target_item:
-        
+        individual_normal_price = data[item][0]
+        print(individual_normal_price)
     
 
 
@@ -255,7 +256,10 @@ def checkout(skus):
     return discounted_total
 
 
-pre_process_discounts(data)
+# pre_process_discounts(data)
+
+print(data["Z"])
+
 
 
 
