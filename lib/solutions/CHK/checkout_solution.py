@@ -17,12 +17,12 @@ data = {
     "M": [15, ""],
     "N": [40, "3N get one M free"],
     "O": [10, ""],
-    "P": [50, "5P for 200             |
-| Q    | 30    | 3Q for 80              |
-| R    | 50    | 3R get one Q free      |
-| S    | 30    |                        |
-| T    | 20    |                        |
-| U    | 40    | 3U get one U free      |
+    "P": [50, "5P for 200"],
+    "Q": [30, "3Q for 80"],
+    "R": [50, "3R get one Q free"],
+    "S": [30, ""],
+    "T": [20, ""],
+    "U": [40, "3U get one U free"],
 | V    | 50    | 2V for 90, 3V for 130  |
 | W    | 20    |                        |
 | X    | 90    |                        |
@@ -228,6 +228,7 @@ def checkout(skus):
 
 
 print(checkout("FFFFFFFFF"))
+
 
 
 
