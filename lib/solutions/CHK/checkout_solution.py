@@ -103,6 +103,7 @@ def parse_special_offer(item, offer_index, item_data):
     special_offer_words = special_offer.split(" ") 
 
     if "any" in special_offer_words:
+        parse_bag_special_offer(special_offer_words)
         
 
     # the quantity involved in the special offer
@@ -140,9 +141,10 @@ def parse_special_offer(item, offer_index, item_data):
 
 
 def parse_bag_special_offer(offer_words):
-
-    buy_target_quantity = buy_target_quantity = int(re.findall("\d+", special_offer_words[2])[0])
-    buy_target_item =  
+    print(offer_words)
+    buy_target_quantity = int(re.findall("\d+", offer_words[2])[0])
+    buy_target_item =  offer_words[4].strip("(").split(",")
+    print(buy_target_item)
 
 
 
@@ -238,16 +240,7 @@ def checkout(skus):
     return discounted_total
 
 
-# print(checkout("HHHHHHHHHH"))
-
-
-
-
-
-
-
-
-
+pre_process_discounts(data)
 
 
 
