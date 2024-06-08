@@ -141,6 +141,8 @@ def parse_special_offer(item, offer_index, item_data):
 
 def calculate_item_discount(item_counts, discounts):
 
+    print(discounts)
+
     discount_value_total = 0
     
     number_of_discounted_items = 0
@@ -228,7 +230,8 @@ def checkout(skus):
     return discounted_total
 
 
-# print(checkout("HHHHHHHHHH"))
+print(checkout("HHHHHHHHHH"))
+
 
 
 
