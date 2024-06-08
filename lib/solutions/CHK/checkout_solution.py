@@ -23,11 +23,11 @@ data = {
     "S": [30, ""],
     "T": [20, ""],
     "U": [40, "3U get one U free"],
-| V    | 50    | 2V for 90, 3V for 130  |
-| W    | 20    |                        |
-| X    | 90    |                        |
-| Y    | 10    |                        |
-| Z    | 50    |                        |
+    "V": [50, "2V for 90, 3V for 130"],
+    "W": [20, ""],
+    "X": [90, ""],
+    "Y": [10, ""],
+    "Z": [50, ""]
 }
 
 # I am assuming you can't get more than 19 free items in an offer
@@ -228,12 +228,6 @@ def checkout(skus):
 
 
 print(checkout("FFFFFFFFF"))
-
-
-
-
-
-
 
 
 
