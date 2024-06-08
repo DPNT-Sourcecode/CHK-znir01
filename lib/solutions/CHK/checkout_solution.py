@@ -12,12 +12,12 @@ data = {
     "H": [10, "5H for 45, 10H for 80"],
     "I": [35, ""],
     "J": [60, ""],
-    "K": [80, "2K for 150             |
-| L    | 90    |                        |
-| M    | 15    |                        |
-| N    | 40    | 3N get one M free      |
-| O    | 10    |                        |
-| P    | 50    | 5P for 200             |
+    "K": [80, "2K for 150"],
+    "L": [90, ""],
+    "M": [15, ""],
+    "N": [40, "3N get one M free"],
+    "O": [10, ""],
+    "P": [50, "5P for 200             |
 | Q    | 30    | 3Q for 80              |
 | R    | 50    | 3R get one Q free      |
 | S    | 30    |                        |
@@ -228,6 +228,7 @@ def checkout(skus):
 
 
 print(checkout("FFFFFFFFF"))
+
 
 
 
