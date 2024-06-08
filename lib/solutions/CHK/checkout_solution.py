@@ -97,6 +97,9 @@ def parse_special_offer(item, offer_index, item_data):
         discount_quantity = convert_number_string_to_int(special_offer_words[-3])
         normal_price = 0
 
+        if buy_target_item == discount_target:
+            print(buy_target_item) 
+
     else:
         discount_target = buy_target_item
         discount_quantity = buy_target_quantity
@@ -205,6 +208,7 @@ def checkout(skus):
 
 
 print(checkout("FF"))
+
 
 
 
