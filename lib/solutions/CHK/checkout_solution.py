@@ -275,7 +275,7 @@ def checkout(skus):
         # --------
         # summing up
 
-    print(price_totals_undiscounted)
+
     undiscounted_total = sum(list(price_totals_undiscounted.values()))
     print("Total before discounts:", undiscounted_total)
 
@@ -291,16 +291,12 @@ def checkout(skus):
 shopping = "SSTTXYZZZ"
 
 checkout(shopping)
-# counts = count_occurances(shopping, set(shopping))
-# discounts = pre_process_discounts(data)
+counts = count_occurances(shopping, set(shopping))
+discounts = pre_process_discounts(data)
 
-# target = list(set(shopping))[2]
-# # print(target)
 
-# for i in discounts:
-#     print(discounts[i])
-#     print(" \n ---- \n ")
-# # bag_discount_value(counts, target, disc)
+bag_discount_value(counts, target, discounts)
+
 
 
 
