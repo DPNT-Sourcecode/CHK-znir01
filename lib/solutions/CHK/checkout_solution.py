@@ -194,7 +194,8 @@ def bag_discount_value(counts, individual_target, discount):
         item_count = counts[item]
         bag_string += item * item_count
 
-    return bag_string
+    
+    number_of_bag_items
     
 
 
@@ -301,11 +302,12 @@ shopping = "SSAAATTBBBXYHHHHZZZ"
 counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
-target = shopping[2]
+target = shopping[1]
 
 discount = discounts[target][0]
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
