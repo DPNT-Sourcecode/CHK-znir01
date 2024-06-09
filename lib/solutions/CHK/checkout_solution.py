@@ -288,15 +288,15 @@ def checkout(skus):
 
 shopping = "SSTTXYZZZ"
 
-checkout(shopping)
+# checkout(shopping)
 counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
+target = shopping[2]
 
-
-# target = shopping[2]
-
+print(discounts[target][0])
 # bag_discount_value(counts, target, discounts)
+
 
 
 
