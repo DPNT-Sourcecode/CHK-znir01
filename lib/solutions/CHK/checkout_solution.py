@@ -69,7 +69,8 @@ def pre_process_discounts(item_data):
                 parsed_special_offer = parse_special_offer(item, offer_index, item_data)
 
                 if parsed_special_offer["discount target"] == "special":
-                    discount_data[item].append(parsed_special_offer)    
+                    discount_data[item].append(parsed_special_offer)
+                    break
 
                 else:
                     discount_data[parsed_special_offer["discount target"]].append(parsed_special_offer)
@@ -296,6 +297,7 @@ for i in discounts:
     print(discounts[i])
     print(" \n ---- \n ")
 # bag_discount_value(counts, target, disc)
+
 
 
 
