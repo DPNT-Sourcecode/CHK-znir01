@@ -183,7 +183,7 @@ def bag_discount_value(counts, individual_target, discount):
     
     discount_target_values = discount["discount value"]
 
-    individual_target_discount_value = discount_target_values 
+    individual_target_discount_value = discount_target_values[individual_target] 
 
     discount_values_ordered = {k: v for k, v in sorted(discount_target_values.items(), key=lambda item: item[1], reverse=True)}
     
@@ -209,9 +209,7 @@ def bag_discount_value(counts, individual_target, discount):
 
     number_of_target_items_discounted = bag_string_discounted_slice.count(individual_target)
 
-
-
-    return 
+    return number_of_target_items_discounted * individual_target_discount_value
 
 
 def calculate_item_discount(item_counts, discount):
@@ -311,18 +309,19 @@ def checkout(skus):
     return discounted_total
 
 
-shopping = "SZSSZS"
+shopping = "SSX"
 
 # checkout(shopping)
 counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
-target = "S"
+target = "X"
 
 discount = discounts[target][0]
 
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
