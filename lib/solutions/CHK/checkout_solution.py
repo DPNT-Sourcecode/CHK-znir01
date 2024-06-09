@@ -315,7 +315,7 @@ def checkout(skus):
     return discounted_total
 
 
-shopping = "SSAAATTBBBXYHHHHHZZZZ"
+shopping = "SSSS"
 
 # checkout(shopping)
 counts = count_occurances(shopping, set(shopping))
@@ -325,7 +325,9 @@ target = shopping[1]
 
 discount = discounts[target][0]
 
-print(bag_discount_value(counts, target, discount))
+print(counts)
+# print(bag_discount_value(counts, target, discount))
+
 
 
 
