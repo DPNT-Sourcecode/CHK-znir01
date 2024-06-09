@@ -316,26 +316,18 @@ def checkout(skus):
     return discounted_total
 
 
-shopping = "SSSS"
+shopping = "SZSSZS"
 
 # checkout(shopping)
 counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
-target = shopping[1]
+target = "T"
 
 discount = discounts[target][0]
 
 
 print(bag_discount_value(counts, target, discount))
-
-
-
-
-
-
-
-
 
 
 
