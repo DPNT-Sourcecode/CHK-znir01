@@ -179,9 +179,7 @@ def parse_bag_special_offer(offer):
          }
 
 
-def bag_discount_value(counts, individual_target, discount):
-
-    discount_targets
+def bag_discount_value(counts, individual_target, discount_targets):
     
     total_discount_items_count = 0
 
@@ -295,7 +293,11 @@ counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
 
-bag_discount_value(counts, target, discounts)
+
+# target = shopping[2]
+
+# bag_discount_value(counts, target, discounts)
+
 
 
 
