@@ -312,9 +312,3 @@ print(bag_discount_value(counts, target, discount))
 
 
 
-
-
-
-
-
-
