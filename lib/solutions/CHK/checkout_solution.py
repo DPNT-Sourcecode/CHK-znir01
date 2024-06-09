@@ -311,5 +311,3 @@ checkout(shopping)
 
 
 
-
-
