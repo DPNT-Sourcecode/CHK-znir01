@@ -181,9 +181,11 @@ def parse_bag_special_offer(offer):
 
 def bag_discount_value(counts, individual_target, discount):
     
-    target
+    discount_target_values = discount["discount value"]
 
-    discount_values_ordered = {k: v for k, v in sorted(discount["discount value"].items(), key=lambda item: item[1], reverse=True)}
+    individual_target_discount_value = discount_target_values 
+
+    discount_values_ordered = {k: v for k, v in sorted(discount_target_values.items(), key=lambda item: item[1], reverse=True)}
     
     bag_quantity = discount["buy quantity"]
 
@@ -321,6 +323,7 @@ discount = discounts[target][0]
 
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
