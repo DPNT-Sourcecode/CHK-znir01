@@ -68,7 +68,7 @@ def pre_process_discounts(item_data):
                 
                 parsed_special_offer = parse_special_offer(item, offer_index, item_data)
 
-                if parsed_special_offer["discount target"] == "special":
+                if parsed_special_offer["discount quantity"] == "special":
                     discount_data[item].append(parsed_special_offer)
                     break
 
@@ -107,7 +107,7 @@ def parse_special_offer(item, offer_index, item_data):
 
     if "any" in item_special_offers:
         
-        return parse_bag_special_offer(item_special_offers)
+        return parse_bag_special_offer(item_special_offers, item)
 
     special_offer = item_special_offers.split(",")[offer_index].strip()
   
@@ -147,7 +147,7 @@ def parse_special_offer(item, offer_index, item_data):
 
 
 
-def parse_bag_special_offer(offer):
+def parse_bag_special_offer(offer, item):
     
     offer_words = offer.split(" ")
 
@@ -173,7 +173,7 @@ def parse_bag_special_offer(offer):
     return {
         "buy target": buy_target_item,
         "buy quantity": buy_target_quantity,
-        "discount target": "special",
+        "discount target": item,
         "discount value": individual_discounts,
         "discount quantity": "special"
          }
@@ -223,25 +223,24 @@ def calculate_item_discount(item_counts, discount):
 
         if discount["discount target"] == "special":
             
+            discount_value_total = bag_discount_value(item_counts, )
+        
+        else:
+            discount_target = discount["discount target"]
+            discount_value = discount["discount value"]
+            discount_quantity = discount["discount quantity"]
+
+            buy_target_count = item_counts[discount["buy target"]]
+            buy_target_quantity = discount["buy quantity"]
+
+            # print(buy_target_count, discount["buy target"])
+            number_of_discounts = max((buy_target_count - number_of_discounted_items) // buy_target_quantity, 0)
             
 
-            return bag_discount_value(item_counts, )
-        
-        discount_target = discount["discount target"]
-        discount_value = discount["discount value"]
-        discount_quantity = discount["discount quantity"]
+            discount_value_total += number_of_discounts * discount_value
+            
 
-        buy_target_count = item_counts[discount["buy target"]]
-        buy_target_quantity = discount["buy quantity"]
-
-        # print(buy_target_count, discount["buy target"])
-        number_of_discounts = max((buy_target_count - number_of_discounted_items) // buy_target_quantity, 0)
-        
-
-        discount_value_total += number_of_discounts * discount_value
-        
-
-        number_of_discounted_items = number_of_discounts * discount_quantity
+            number_of_discounted_items = number_of_discounts * discount_quantity
         
         
 
@@ -312,6 +311,7 @@ def checkout(skus):
 shopping = "SSX"
 
 checkout(shopping)
+
 
 
 
