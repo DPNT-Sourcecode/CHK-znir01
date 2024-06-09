@@ -223,9 +223,9 @@ def calculate_item_discount(item_counts, discount):
 
         if discount["discount target"] == "special":
             
-            discount_items = discount["buy target"]
+            
 
-            return 0 
+            return bag_discount_value(item_counts, )
         
         discount_target = discount["discount target"]
         discount_value = discount["discount value"]
@@ -311,16 +311,8 @@ def checkout(skus):
 
 shopping = "SSX"
 
-# checkout(shopping)
-counts = count_occurances(shopping, set(shopping))
-discounts = pre_process_discounts(data)
+checkout(shopping)
 
-target = "X"
-
-discount = discounts[target][0]
-
-
-print(bag_discount_value(counts, target, discount))
 
 
 
