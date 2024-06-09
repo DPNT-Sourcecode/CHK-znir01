@@ -181,9 +181,8 @@ def parse_bag_special_offer(offer):
 
 def bag_discount_value(counts, individual_target, discount):
     
-
-    # discount_data[parsed_special_offer["discount target"]] = sorted(discount_data[parsed_special_offer["discount target"]], key=lambda d: d['discount value'], reverse=True)
-
+    discount_values_ordered = {k: v for k, v in sorted(discount["discount value"].items(), key=lambda item: item[1], reverse=True)}
+    
     discount_targets = discount["buy target"]
 
     total_discount_items_count = 0
@@ -302,6 +301,7 @@ target = shopping[2]
 discount = discounts[target][0]
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
