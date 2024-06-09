@@ -308,9 +308,10 @@ def checkout(skus):
     return discounted_total
 
 
-shopping = "SSS"
+shopping = "AASSASTTXXX"
 
 checkout(shopping)
+
 
 
 
