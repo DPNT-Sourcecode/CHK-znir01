@@ -187,12 +187,10 @@ def bag_discount_value(counts, individual_target, discount):
 
     discount_targets = discount["buy target"]
 
-    total_discount_items_count = 0
+    # Make a string containing multiples of each bag item, ordered by value
+    bag_string = ""
 
-    for item in discount_targets:
-        total_discount_items_count +=counts[item]
-
-    
+    for 
     
 
 
@@ -304,6 +302,7 @@ target = shopping[2]
 discount = discounts[target][0]
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
