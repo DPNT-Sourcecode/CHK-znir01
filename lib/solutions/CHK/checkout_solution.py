@@ -195,7 +195,9 @@ def bag_discount_value(counts, individual_target, discount):
         bag_string += item * item_count
 
     
-    number_of_bag_items
+    number_of_bag_items = len(bag_string)
+    
+    
     
 
 
@@ -296,7 +298,7 @@ def checkout(skus):
     return discounted_total
 
 
-shopping = "SSAAATTBBBXYHHHHZZZ"
+shopping = "SSAAATTBBBXYHHHHHZZZZ"
 
 # checkout(shopping)
 counts = count_occurances(shopping, set(shopping))
@@ -307,6 +309,7 @@ target = shopping[1]
 discount = discounts[target][0]
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
