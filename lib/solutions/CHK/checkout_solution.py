@@ -212,7 +212,7 @@ def bag_discount_value(counts, individual_target, discount):
     return number_of_target_items_discounted * individual_target_discount_value
 
 
-def calculate_item_discount(item_counts, discount):
+def calculate_item_discount(item_counts, discounts):
 
 
     discount_value_total = 0
@@ -223,7 +223,7 @@ def calculate_item_discount(item_counts, discount):
 
         if discount["discount quantity"] == "special":
             
-            discount_value_total = bag_discount_value(item_counts, discount[discount])
+            discount_value_total = bag_discount_value(item_counts, discount["discount target"], discount)
         
         else:
             discount_target = discount["discount target"]
@@ -308,12 +308,10 @@ def checkout(skus):
     return discounted_total
 
 
-shopping = "SSX"
+shopping = "SSS"
 
-discounts = pre_process_discounts(data)
+checkout(shopping)
 
-for item in discounts:
-    print(item, discounts[item])
 
 
 
