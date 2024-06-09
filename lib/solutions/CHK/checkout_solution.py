@@ -310,7 +310,11 @@ def checkout(skus):
 
 shopping = "SSX"
 
-checkout(shopping)
+discounts = pre_process_discounts(data)
+
+for item in discounts:
+    print(item, discounts[item])
+
 
 
 
