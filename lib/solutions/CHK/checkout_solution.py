@@ -179,16 +179,19 @@ def parse_bag_special_offer(offer):
          }
 
 
-def bag_discount_value(counts, individual_target, discount_targets):
+def bag_discount_value(counts, individual_target, discount):
     
+    discount_targets = discount["buy target"]
+
     total_discount_items_count = 0
 
     for item in discount_targets:
         total_discount_items_count +=counts[item]
 
+    return total_discount_items_count
 
 
-def calculate_item_discount(item_counts, discounts):
+def calculate_item_discount(item_counts, discount):
 
 
     discount_value_total = 0
@@ -285,7 +288,6 @@ def checkout(skus):
     return discounted_total
 
 
-
 shopping = "SSTTXYZZZ"
 
 # checkout(shopping)
@@ -294,8 +296,10 @@ discounts = pre_process_discounts(data)
 
 target = shopping[2]
 
-print(discounts[target][0])
-# bag_discount_value(counts, target, discounts)
+discount = discounts[target][0]
+
+print(bag_discount_value(counts, target, discount))
+
 
 
 
