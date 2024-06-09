@@ -221,9 +221,9 @@ def calculate_item_discount(item_counts, discount):
 
     for discount in discounts:
 
-        if discount["discount target"] == "special":
+        if discount["discount quantity"] == "special":
             
-            discount_value_total = bag_discount_value(item_counts, )
+            discount_value_total = bag_discount_value(item_counts, discount[discount])
         
         else:
             discount_target = discount["discount target"]
@@ -314,13 +314,6 @@ discounts = pre_process_discounts(data)
 
 for item in discounts:
     print(item, discounts[item])
-
-
-
-
-
-
-
 
 
 
