@@ -1,5 +1,7 @@
 
-print("AABB".count("C"))
+the_dict = {'S': 5, 'T': 5, 'X': 2, 'Y': 5, 'Z': 6}
+
+print(sorted(the_dict))
 
 
 # if "A" in list(dict.keys()):
