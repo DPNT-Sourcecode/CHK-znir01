@@ -1,7 +1,7 @@
 
 the_dict = {'S': 5, 'T': 5, 'X': 2, 'Y': 5, 'Z': 6}
 
-print(sorted(the_dict))
+print(sorted(the_dict.items()))
 
 
 # if "A" in list(dict.keys()):
@@ -30,3 +30,4 @@ print(sorted(the_dict))
 #         # account for normal non special offer prices of items
 
 #         total_price += item_count * price
+
