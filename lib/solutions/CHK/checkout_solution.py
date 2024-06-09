@@ -147,7 +147,7 @@ def parse_special_offer(item, offer_index, item_data):
 
 
 
-def parse_bag_special_offer(offer, item):
+def parse_bag_special_offer(offer, thing):
     
     offer_words = offer.split(" ")
 
@@ -173,7 +173,7 @@ def parse_bag_special_offer(offer, item):
     return {
         "buy target": buy_target_item,
         "buy quantity": buy_target_quantity,
-        "discount target": item,
+        "discount target": thing,
         "discount value": individual_discounts,
         "discount quantity": "special"
          }
@@ -314,6 +314,7 @@ discounts = pre_process_discounts(data)
 
 for item in discounts:
     print(item, discounts[item])
+
 
 
 
