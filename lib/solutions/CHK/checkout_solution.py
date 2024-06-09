@@ -181,6 +181,8 @@ def parse_bag_special_offer(offer):
 
 def bag_discount_value(counts, individual_target, discount):
     
+    target
+
     discount_values_ordered = {k: v for k, v in sorted(discount["discount value"].items(), key=lambda item: item[1], reverse=True)}
     
     bag_quantity = discount["buy quantity"]
@@ -195,28 +197,19 @@ def bag_discount_value(counts, individual_target, discount):
             item_count = counts[item]
             bag_string += item * item_count
 
-
-    print(f"Bag string: {bag_string} of length {len(bag_string)}")
-
     number_of_bag_items = len(bag_string)
     
     number_of_discounted_bags = number_of_bag_items // bag_quantity
 
-    print(f"number of discount bags: {number_of_discounted_bags}")
-
     number_of_discounted_items = number_of_discounted_bags * bag_quantity
-
-    print(f"Number of discounted items: {number_of_discounted_items}")
 
     bag_string_discounted_slice = bag_string[:number_of_discounted_items]
 
-    print(f"discount bag slice: {bag_string_discounted_slice}")
-
     number_of_target_items_discounted = bag_string_discounted_slice.count(individual_target)
-    
-    print(f"number of target ({individual_target}) items: {number_of_target_items_discounted}")
 
-    return number_of_target_items_discounted
+
+
+    return 
 
 
 def calculate_item_discount(item_counts, discount):
@@ -322,12 +315,13 @@ shopping = "SZSSZS"
 counts = count_occurances(shopping, set(shopping))
 discounts = pre_process_discounts(data)
 
-target = "T"
+target = "S"
 
 discount = discounts[target][0]
 
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
