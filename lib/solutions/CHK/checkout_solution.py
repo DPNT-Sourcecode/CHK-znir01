@@ -191,9 +191,9 @@ def bag_discount_value(counts, individual_target, discount):
     bag_string = ""
 
     for item in list(discount_values_ordered.keys()):
-        if item in counts.keys()
-        item_count = counts[item]
-        bag_string += item * item_count
+        if item in counts.keys():
+            item_count = counts[item]
+            bag_string += item * item_count
 
 
     print(f"Bag string: {bag_string} of length {len(bag_string)}")
@@ -326,8 +326,9 @@ target = shopping[1]
 
 discount = discounts[target][0]
 
-print(counts)
-# print(bag_discount_value(counts, target, discount))
+
+print(bag_discount_value(counts, target, discount))
+
 
 
 
