@@ -193,6 +193,7 @@ def bag_discount_value(counts, individual_target, discount):
         total_discount_items_count +=counts[item]
 
     
+    
 
 
 def calculate_item_discount(item_counts, discount):
@@ -303,6 +304,7 @@ target = shopping[2]
 discount = discounts[target][0]
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
