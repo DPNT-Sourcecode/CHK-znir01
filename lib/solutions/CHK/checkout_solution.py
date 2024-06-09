@@ -203,7 +203,7 @@ def bag_discount_value(counts, individual_target, discount):
 
     bag_string_discounted_slice = bag_string[:number_of_discounted_items]
 
-    return bag_string_discounted_slice
+    number_of_target_items_discounted = bag_string_discounted_slice.count()
     
 
 
@@ -315,6 +315,7 @@ target = shopping[1]
 discount = discounts[target][0]
 
 print(bag_discount_value(counts, target, discount))
+
 
 
 
